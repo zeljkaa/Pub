@@ -1,0 +1,477 @@
+
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;	
+	
+}
+
+button {
+	margin-top: 15px;
+	color: #EEE1BF;
+	background-color: transparent;
+	font-size: 20px;
+	border: 2px solid #EEE1BF;
+	padding: 9px 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+
+/*NAVIGATION*/
+nav {
+	width: 100%;
+	background: black;
+}
+ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: right;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px;
+}
+ul li:hover {
+	background-color: #A3533B;;
+}
+ul li a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+.toggle i {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: black;
+	text-align: right;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+@media (max-width: 768px){
+	.toggle {
+		display: block;
+		cursor: pointer;
+	}
+	ul {
+	width: 100%;
+	display: none;
+	}
+	ul li {
+		display: block;
+		text-align: center;
+	}
+	.active {
+		display: block;
+	}
+}
+
+
+/*----------------------------------clear----------------------------------*/
+.clear {
+	clear: both;
+}
+
+/*---------------------------------pozadina-------------------------------*/
+.bg-1 {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/hero-dark.jpg");
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/*---------------------------------logo---------------------------------*/
+.bg-1 img{
+	width: 300px;
+	height: 186px;   
+}
+
+.wrapper-1  {
+	width: 600px;
+	min-height:300px;
+	margin: 0px auto;
+	color: #FFFFFF;
+	font-size: 32px;
+	text-align: center;
+	padding-top: 150px;	
+}
+
+.wrapper-1 h1 {
+	font-size: 60px;
+}
+
+@media (max-width: 575.98px) { 
+	.wrapper-1  {
+		width: 300px;
+		font-size: 18px;
+		/*top: 200px;*/
+		/*left: 200px;*/	
+	}
+
+	.wrapper-1 h1 {
+		font-size: 40px;
+	}
+
+	.bg-1 img {
+		width:160px;
+		height: 93;
+	}
+ }
+
+ /*-------------------------SEKCIJA SA TRI DIVA---------------------------*/
+
+ .box {
+ 	width: 33.3%;
+ 	height: 100%;
+ 	float: left;
+
+ }
+
+ .box img {
+ 	width: 100%;
+    height: 100%;
+ }
+
+ .box-text {
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: #000000;
+ 	padding-top: 35%;
+ }
+
+ .box-text h2 {
+	margin: 50px;
+	padding: 15px;
+	border: 6px solid #eee1c5;
+	color:#fff;
+	font-size: 70px;
+	text-align: center;
+ }
+
+
+
+@media (max-width: 1245px) {
+	.box-pomoc {
+	width: 50%;	
+	height: 100%;
+	background-image: url("img/singe.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	}
+
+
+	.box-preko {
+	position: absolute;
+	background: transparent;
+	right: 15%;
+	width: 70%;	
+	}
+
+	.box-text {
+ 	padding-top: 35%;
+ 	height: 300px;
+ 	background: transparent;
+ }
+
+}
+
+@media (max-width: 575.98px) { 
+	.box-pomoc-2 {
+	width:100%;
+	height: 50%;
+	background-image: url("img/singe.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	}
+
+	.box-text {
+ 	padding-top: 70%;	
+ }
+	
+ 	.box-text h2 {
+	margin: 10px;
+	padding: 15px;
+	border: 6px solid #eee1c5;
+	color:#fff;
+	font-size: 60px;
+	text-align: center;
+ }
+}
+
+/*----------------------------SECTION EVENTS-----------------------------*/
+
+.section-tri {
+	width: 100%;
+	height: 800px;
+	background-image:url("../img/stage.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	padding-top: 8%;
+
+}
+
+.wrapper {
+	width: 35%;
+	max-width: 750px;
+	height: auto;
+    margin-left: 2.5%;
+	color: #fff;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 6px solid #EEE1BF;
+
+	
+}
+
+.wrapper h2 {
+	font-size: 47px;
+	font-weight: bold;
+}
+
+.wrapper h3 {
+	font-size: 35px;
+}
+
+.wrapper p {
+	line-height: 1.7em;
+}
+
+@media (max-width: 1245px) {
+
+	.wrapper {
+	width: 90%;
+	margin-left: 5%;
+    max-width: none;
+	}
+}
+
+
+
+
+/*SECTION MENU*/
+.menu-section {
+	width: 100%;
+	height: auto;
+	background-image: url("../img/rostilj.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+.menu {
+	width: 60%;
+	height: auto;
+	margin: 0px auto;
+	color: #EEE1BF;
+	font-size: 25px;
+	padding: 70px 0;	
+}
+
+.menu-logo {
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+	
+}
+.menu-logo img{
+	width: 300px;
+	height: 50px;
+}
+
+.menu h4 {
+	font-size: 48px;
+	color:  #A3533B;
+}
+
+
+.left-side {
+	width: 50%;
+	height: auto;
+	float: left;
+	
+}
+.left-side img {
+	width: 100%;
+	height: 300px;
+	float: left;
+}
+
+.right-side {
+	width: 50%;
+	height: auto;
+	padding-left: 40px;
+	float: left; 	
+	position: relative;
+}
+
+.right-side h4 {
+	
+}
+.right-side h6  {
+	position: absolute;
+	right: 40px;
+}
+.clear {
+	clear: both;
+}
+
+
+.left-side {
+	position: relative;
+
+}
+.left-side h6 {
+	position: absolute;
+	right: 40px;
+}
+
+
+@media (max-width: 768px) {
+		.left-side {
+		width: 100%;
+				
+}
+		.right-side {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+/*-------------------------------------SECTION ABOUT US----------------------------*/
+
+.section-cetiri {
+	width: 100%;
+	height: 800px;
+	background-image:url("../img/sect-5.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	padding-top: 8%;
+
+}
+
+.wrapper2 {
+	width: 35%;
+	max-width: 750px;
+	height: auto;
+    margin-left: 2.5%;
+	color: #fff;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 6px solid #EEE1BF;	
+}
+
+.wrapper2 h2 {
+	font-size: 47px;
+	font-weight: bold;
+}
+
+.wrapper2 h3 {
+	font-size: 35px;
+}
+
+.wrapper2 p {
+	line-height: 1.7em;
+}
+
+@media (max-width: 1245px) {
+
+	.wrapper2 {
+	width: 90%;
+	margin-left: 5%;
+    max-width: none;
+	}
+}
+
+
+/*-----------------------CONTACT----------------------*/
+.contact-content {
+	padding: 20px 0; 
+	width: 33.3%;
+	height: 120px;
+	float: left;
+	text-align: center;
+	background-color: #000;
+	color: #EEE1BF;
+}
+
+@media (max-width: 768px) {
+		.contact-content img {
+		width: 54px;
+		height: 54px;		
+}
+.contact-content {
+	padding: 10px;
+	}
+}
+
+@media (max-width: 576px) {
+
+	.contact-content {
+		width: 100%;
+		height: auto;
+	}
+	.contact-content img {
+		width: 54px;
+		height: 54px;
+}
+
+}
+
+
+/* dugme za scroll */
+
+.btnscroll  {
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background:  #A3533B;
+  border: none;
+  font-size: 27px;
+  display: none;
+  cursor: pointer;
+  
+}
+
+
+/* sesigned by me  */
+.design {
+    background: #0E0E0E;
+    color: #fff;
+    text-align: center;
+}
